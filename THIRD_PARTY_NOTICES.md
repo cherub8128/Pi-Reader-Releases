@@ -51,3 +51,9 @@ The Android APK shares the React/Lucide/Noto web interface and uses the followin
 | Guava listenablefuture | 1.0 | Apache-2.0 |
 
 The complete resolved component/version list and original notices extracted from runtime artifacts are included in licenses/Android-components.txt and licenses/Android-runtime-notices.txt. Full Apache 2.0 terms are reproduced in licenses/Apache-2.0.txt. Android WebView is supplied by the device and is not redistributed inside this APK. SDK, Gradle and Capacitor CLI are build tools, not app features or bundled runtime libraries. These third-party terms do not replace the proprietary Pi Reader license.
+
+## AppImage launcher runtime
+
+The Linux AppImage adds the separate AppImage type2-runtime at commit 75849dce7cc37e4319b633df1f116ca895c71a12 (MIT), with statically linked libfuse 3.15.0 (LGPL-2.1) and squashfuse 0.5.2 (BSD-2-Clause). Complete original notices, including musl, zstd, zlib and mimalloc notices, are embedded under runtime-licenses/. Exact runtime, libfuse and squashfuse source archives, the upstream libfuse patch, build/relink instructions and URL/SHA-256 provenance are included under runtime-sources/ and README-APPIMAGE.txt inside the AppImage. They can be accessed using --appimage-extract.
+
+These materials concern the third-party launcher runtime; Pi Reader application source is not included. Pi Reader's proprietary terms do not restrict the separate rights granted by these component licenses, including modification, redistribution and reverse engineering to debug LGPL component modifications. The runtime can be replaced independently of Pi Reader. The squashfs-tools-ng utility is a build tool and is not shipped in the AppImage.

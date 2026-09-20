@@ -18,12 +18,15 @@
 | --- | --- |
 | Windows 10·11 64비트 | `windows-x64-setup.exe` 권장 · 설치 없이 쓰려면 `portable.exe` |
 | Ubuntu·Debian 계열 64비트 | `linux-x64.deb` |
+| Linux 64비트, 설치 없이 실행 | `linux-x64.AppImage` — 파일 실행 권한을 허용한 뒤 열기 |
 | 그 외 Linux 64비트 | `linux-x64.tar.gz` — 압축 안의 실행 준비 안내 참고 |
 | Apple Silicon Mac | `mac-arm64-adhoc.zip` |
 | Intel Mac | `mac-x64-adhoc.zip` |
 | Android 7.0 이상 | `Pi-Reader-1.0.1-android.apk` |
 
 Mac·Linux 버전은 시험 배포이며 해당 운영체제의 실행 확인이 아직 끝나지 않았습니다. Windows·Mac에서 개발자 확인 안내가 나타날 수 있으며, Mac 버전은 Apple 공증을 받지 않았습니다.
+
+일반 실행에는 FUSE와 fusermount가 필요합니다. FUSE를 사용할 수 없다면 `./Pi-Reader-1.0.1-linux-x64.AppImage --appimage-extract-and-run`으로 임시 압축을 풀어 실행할 수 있습니다. 두 방식 모두 사용자 네임스페이스를 허용하는 Linux 환경과 `unshare`가 필요합니다. 시스템 보안 정책 때문에 실행이 제한되면 Ubuntu·Debian에서는 `.deb` 패키지를 선택하세요.
 
 실행한 뒤 **폴더 추가** 또는 **파일 열기**로 시작하세요. 읽기와 PDF 저장에는 인터넷이 필요하지 않고, 원본 파일은 변경하지 않습니다. 업데이트와 다른 앱 목록은 인터넷으로 불러옵니다.
 
