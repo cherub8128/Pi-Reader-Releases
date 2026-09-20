@@ -33,3 +33,21 @@ Pi Reader does not claim ownership of these third-party components. The MIT/ISC 
 node-unrar-js 2.0.2 includes UnRAR 6.1.7 compiled with Emscripten. The wrapper's MIT license does not replace the UnRAR license. Complete original terms are in licenses/UnRAR.txt, extracted from the exact upstream archive referenced by node-unrar-js: https://www.rarlab.com/rar/unrarsrc-6.1.7.tar.gz. UnRAR is free to use for reading RAR archives, including within commercial software, but its code cannot be used to create a RAR-compatible archiver or re-create the proprietary RAR compression algorithm. Pi Reader only extracts archives.
 
 Emscripten generated runtime code retains its permissive MIT / University of Illinois-NCSA terms. The upstream license text is included as licenses/Emscripten.txt (https://github.com/emscripten-core/emscripten/blob/3.1.11/LICENSE); this license-text reference does not assert the compiler version used by the prebuilt node-unrar-js package. Electron's MIT license is also reproduced in licenses/Electron-MIT.txt.
+
+## Android edition
+
+The Android APK shares the React/Lucide/Noto web interface and uses the following native runtime components. Electron, yauzl and UnRAR are desktop-only and are not included in the APK.
+
+| Component | Version | License / original notice |
+| --- | --- | --- |
+| Capacitor core and Android | 8.5.2 | MIT, licenses/Capacitor-MIT.txt |
+| tslib | 2.8.1 | 0BSD, licenses/tslib-0BSD.txt |
+| Apache Cordova Android framework | 14.0.1 | Apache-2.0, licenses/Apache-2.0.txt and licenses/Cordova-NOTICE.txt |
+| AndroidX | Resolved versions in licenses/Android-components.txt | Apache-2.0 |
+| Kotlin standard library | 2.0.21 | Apache-2.0 |
+| Kotlin coroutines | 1.8.1 | Apache-2.0 |
+| JetBrains annotations | 23.0.0 | Apache-2.0 |
+| JSpecify | 1.0.0 | Apache-2.0 |
+| Guava listenablefuture | 1.0 | Apache-2.0 |
+
+The complete resolved component/version list and original notices extracted from runtime artifacts are included in licenses/Android-components.txt and licenses/Android-runtime-notices.txt. Full Apache 2.0 terms are reproduced in licenses/Apache-2.0.txt. Android WebView is supplied by the device and is not redistributed inside this APK. SDK, Gradle and Capacitor CLI are build tools, not app features or bundled runtime libraries. These third-party terms do not replace the proprietary Pi Reader license.
